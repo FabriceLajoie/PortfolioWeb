@@ -10,7 +10,7 @@
 
 
 :root{
-  --orange-background: #ffa400;
+  --orange-background: #f5ab0e;
   --blue-background: #0caedb;
   --font-color: #3F3D3D;
   --white-background: #CAC2BB;
@@ -18,15 +18,26 @@
 }
 
 * { 
-  /* outline: 1px solid red;
-  outline-offset: -1px; */
+  outline: 1px solid red;
+  outline-offset: -1px;
   padding: 0rem;
   margin: 0;
-  background-color: var(--other-white-background);
   font-weight: bolder;
   text-decoration: none;
 }
+
+a{
+  color: var(--font-color);
+}
+
+body{
+  background-color: var(--other-white-background);
+}
   
+.nav-bar{
+  background-color: var(--white-background);
+}
+
 .nav-bar a{
   color: var(--font-color);
 }
@@ -36,14 +47,13 @@
   margin-right: 1rem;
 }
 
-  
 .nav-bar h1{
   font-size: 2.2rem;
   text-decoration: underline;
   margin-left: 1rem;
 }
 
-.nav-bar ul{
+.nav-bar h2{
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -86,17 +96,19 @@ hr{
 }
 
 .hero .image-presentation {
-  flex:65%;
+  flex:60%;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .hero .image-presentation img{
-  height: auto;
-  width:100%;
   justify-content: center;
   align-items: center;
+  border: 5px solid var(--white-background);
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  width:100%;
 }
 
 .hero .image-presentation p{
@@ -108,15 +120,18 @@ hr{
 .hero .presentation{
   flex:35%;
   font-size: 2rem;
+  margin-left: 1rem;
   font-weight: bolder;
   justify-content: center;
   align-items: center;
 }
 
 .hero .presentation img{
+  border: 5px solid var(--white-background);
+  border-radius: 10px;
   height: auto;
   width:100%;
-  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projets{
@@ -124,23 +139,26 @@ hr{
   flex:30%;
   color: var(--orange-background);
   font-style:italic;
-  margin: 1rem;
-  align-items: center;
+  margin: 2rem;
+  text-align: center;
   justify-items: center;
 }
 
 .projets img{
   width: 100%;
   height: auto;
+  border: 5px solid var(--white-background);
   border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.projets h2{
-  color: var(--blue-background);
-  justify-items: center;
+.projets a{
+  font-style: normal;
+  font-size: larger;
+  color: var(--font-color);
 }
 
-.material-symbols-outlined {
+.projets .material-symbols-outlined {
   display: flex;
   justify-content: center;
   align-items:center;
@@ -150,12 +168,54 @@ hr{
 
 .aPropos {
   display: flex;
+  margin: 1rem;
+}
+
+.aPropos p{
+  color: var(--blue-background);
+  font-weight: bolder;
 }
 
 .aPropos .texte-description {
   flex:55%;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+
+.aPropos .right{
+  text-align: right;
+  color: var(--orange-background);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .aPropos .ville-rimouski{
+  font-size: 2rem;
   flex: 45%;
+  margin: 1rem;
+}
+
+.aPropos iframe{
+  height: 73%;
+  width: 100%;
+  border: 5px solid var(--white-background);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.aPropos .btn {
+  background-color:var(--white-background);
+  border: none;
+  color:var(--font-color);
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: var(--font-color);
+  color: var(--white-background);
 }
