@@ -5,33 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fabrice Lajoie</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="img/Capture d’écran 2022-04-07 104519.png"
-    />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h1>Fabrice<span>Lajoie</span></h1>
-      </div>
       <nav>
         <div class="nav-bar">
           <ul>
-            <li><a href="/index.html">Accueil</a></li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">FR</a></li>
-            <li>/</li>
-            <li><a href="">EN</a></li>
-          </ul>
-        </div>
-        <div class="nav-bar-current">
-          <ul>
-            <li><a href="#hero">Présentation</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <h2>
+              <li>
+                <h1>
+                  <a href="index.html">Fabrice<span>Lajoie</span></a>
+                </h1>
+              </li>
+              <li><a href="#hero">Présentation</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#aPropos">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <div class="right">
+                <li><a href="">FR</a></li>
+                <li>/</li>
+                <li><a href="">EN</a></li>
+              </div>
+            </h2>
           </ul>
         </div>
       </nav>
@@ -39,10 +36,10 @@
     <main>
       <section class="hero" title="Hero">
         <div class="image-presentation">
-          <img src="" alt="Image présentation" />
+          <img src="/img/moiEtMathieu.jpg" alt="Image présentation" />
         </div>
         <div class="presentation">
-          <img src="" alt="Moi" />
+          <img src="/img/moi.jpeg" alt="Moi" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             adipisci pariatur quod ex rerum iste, aspernatur magnam dignissimos
@@ -51,8 +48,9 @@
           </p>
         </div>
       </section>
+      <br />
       <section class="projets" title="Projets">
-        <div class="projet1">
+        <div class="projet">
           <div class="p1-img">
             <img src="" alt="Projet1" />
           </div>
@@ -62,8 +60,8 @@
           </div>
           <h2><a href="">Projet1</a></h2>
         </div>
-        <img src="" alt="flèche" />
-        <div class="projet2">
+        <div class="fleche"><img src="" alt="flèche" /></div>
+        <div class="projet">
           <div class="p2-img">
             <img src="" alt="Projet2" />
           </div>
@@ -73,18 +71,66 @@
           </div>
           <h2><a href="">Projet2</a></h2>
         </div>
-        <img src="" alt="flèche" />
-        <div class="projet3">
+        <div class="fleche"><img src="" alt="flèche" /></div>
+        <div class="projet">
           <div class="p3-img">
             <img src="" alt="Projet3" />
           </div>
           <div class="descriptionP3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id pariatur
-            soluta nisi obcaecati, cum neque.
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              pariatur soluta nisi obcaecati, cum neque.
+            </p>
           </div>
           <h2><a href="">Projet3</a></h2>
         </div>
       </section>
+      <br />
+      <section class="aPropos" title="À propos">
+        <div class="texte-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            dolorem cum labore adipisci quidem eligendi a assumenda eum
+            consequatur ad placeat rerum quam provident magni doloremque
+            similique aliquam dolore laudantium aliquid, necessitatibus maxime
+            quaerat animi repellendus! Aut provident vero eaque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            dolorem cum labore adipisci quidem eligendi a assumenda eum
+            consequatur ad placeat rerum quam provident magni doloremque
+            similique aliquam dolore laudantium aliquid, necessitatibus maxime
+            quaerat animi repellendus! Aut provident vero eaque.
+          </p>
+          <h3>
+            <a href=""
+              >Téléchargez mon CV
+              <img
+                src="/img/logoDownload.jpg"
+                alt="ImageDownload"
+                width="2%"
+                height="2%"
+            /></a>
+          </h3>
+        </div>
+        <div class="ville-rimouski">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            nisi rerum porro? Perspiciatis voluptate magnam reprehenderit dicta
+            culpa nisi aperiam.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169519.25501582382!2d-68.72238655804209!3d48.40396749864622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c95d9070d5559d3%3A0x61da5fba47f4a47d!2sRimouski%2C%20QC!5e0!3m2!1sfr!2sca!4v1650986191314!5m2!1sfr!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <br />
       <section class="contact" title="Contact">
         <div>
           <form action="">

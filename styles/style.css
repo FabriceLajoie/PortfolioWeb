@@ -6,8 +6,96 @@
 
 /* 1. Everything */
 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Roboto:wght@300&display=swap');
+
+:root{
+  --orange-background: #ffa400;
+  --blue-background: #0caedb;
+  --font-color: #3F3D3D;
+  --white-background: #CAC2BB;
+  --other-white-background: #EFEFF0;
+}
+
 * { 
-    outline: 1px solid red;
-    outline-offset: -1px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+  padding: 0rem;
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  color: var(--font-color);
+  background-color: var(--other-white-background);
+  text-decoration: none;
   }
   
+  span{
+    color: var(--blue-background);
+  }
+
+  
+  .nav-bar li{
+    display: inline-block;
+  }
+  
+  .nav-bar h1{
+    font-size: 2.2rem;
+    text-decoration: underline;
+    margin-left: 1rem;
+  }
+
+  .nav-bar ul{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .nav-bar .right{
+    float: right;
+  }
+  
+
+main{
+  background-color: var(--white-background);
+}
+
+h1, h2, h3{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.hero{
+  display: flex;
+}
+
+.hero .image-presentation{
+  flex:65%;
+  height: 10%;
+  width: auto;
+}
+
+.hero .presentation{
+  flex:25%;
+}
+
+.hero .presentation img{
+  height: 10%;
+  width: auto;
+}
+
+.projets{
+  display: flex;
+  flex:30%;
+}
+
+.aPropos {
+  display: flex;
+}
+
+.aPropos .texte-description {
+  flex:55%;
+}
+
+.aPropos .ville-rimouski{
+  flex: 45%;
+}
