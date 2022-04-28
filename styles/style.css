@@ -11,6 +11,7 @@
 
 :root{
   --orange-background: #f5ab0e;
+  --blue-navbar: #3d758c;
   --blue-background: #0caedb;
   --font-color: #3F3D3D;
   --white-background: #CAC2BB;
@@ -18,7 +19,7 @@
 }
 
 * { 
-  padding: 0rem;
+  padding: 0;
   margin: 0;
   font-weight: bolder;
   text-decoration: none;
@@ -60,16 +61,17 @@ body{
  
 .nav-bar .right{
   float: right;
+  align-items: baseline;
 }
 
 .nav-bar hr{
-  border: 5px solid var(--blue-background);
+  border: 5px solid var(--blue-navbar);
   border-radius: 2.5px;
 }
 
 
 span{
-  color: var(--blue-background);
+  color: var(--blue-navbar);
 }
 
 p{
@@ -83,14 +85,16 @@ main h1, h2, h3{
 
 hr{
   border: 2px solid var(--font-color);
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 10px;
 }
 
 .hero{
   display: flex;
   margin: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .hero .image-presentation {
@@ -100,13 +104,14 @@ hr{
 }
 
 .hero .image-presentation img{
+  padding-right: -10px;
   justify-content: center;
   align-items: center;
   border: 5px solid var(--white-background);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
-  width:100%;
+  width:99.5%;
 }
 
 .hero .image-presentation p{
@@ -140,14 +145,31 @@ hr{
   margin: 2rem;
   text-align: center;
   justify-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.projets img{
+.projets .projets-images img {
   width: 100%;
   height: auto;
   border: 5px solid var(--white-background);
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projets-images {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.projets h3{
+  margin:2rem;
+  font-size: larger;
 }
 
 .projets a{
@@ -156,17 +178,11 @@ hr{
   color: var(--font-color);
 }
 
-.projets .material-symbols-outlined {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .aPropos {
   display: flex;
   margin: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .aPropos p{
@@ -184,7 +200,7 @@ hr{
 .aPropos .right{
   text-align: right;
   color: var(--orange-background);
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -192,6 +208,7 @@ hr{
   font-size: 2rem;
   flex: 45%;
   margin: 1rem;
+  text-align: right;
 }
 
 .aPropos iframe{
@@ -241,11 +258,6 @@ hr{
 .footer-basic .social {
   text-align:center;
   padding-bottom:5px;
-}
-
-.footer-basic .gg-mail{
-  align-items: center;
-  justify-items: center;
 }
 
 .footer-basic .social > a:hover {
