@@ -23,6 +23,8 @@
   margin: 0;
   font-weight: bolder;
   text-decoration: none;
+  /* outline: 1px solid red;
+  outline-offset: -1px; */
 }
 
 a{
@@ -31,6 +33,10 @@ a{
 
 body{
   background-color: var(--other-white-background);
+}
+
+main{
+  margin: 3rem;
 }
   
 .nav-bar{
@@ -44,12 +50,6 @@ body{
 .nav-bar li{
   display: inline-block;
   margin-right: 1rem;
-}
-
-.nav-bar h1{
-  font-size: 2.2rem;
-  text-decoration: underline;
-  margin-left: 1rem;
 }
 
 .nav-bar h2{
@@ -69,13 +69,11 @@ body{
   border-radius: 2.5px;
 }
 
-
-span{
+/* span{
   color: var(--blue-navbar);
-}
+} */
 
 p{
-  color: var(--blue-background);
   font-family: 'League Spartan', sans-serif;
 }
 
@@ -85,7 +83,7 @@ main h1, h2, h3{
 
 hr{
   border: 2px solid var(--font-color);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
@@ -93,14 +91,40 @@ hr{
 .hero{
   display: flex;
   margin: 1rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
+  color: var(--blue-background);
+}
+
+.hero .titre{
+  align-items: flex-start;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.titre{
+  padding:2rem;
+}
+
+.titre a{
+  text-decoration: underline;
+  text-decoration-color: var(--blue-background);
+}
+
+.titre span{
+  color:var(--blue-background);
+}
+
+.hero .image-presentation .titre p{
+  padding-top: 1rem;
+  color:var(--blue-background);
 }
 
 .hero .image-presentation {
-  flex:55%;
+  flex:50%;
   margin-left: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 
 .hero .image-presentation img{
@@ -115,7 +139,6 @@ hr{
 }
 
 .hero .image-presentation p{
-  color: var(--orange-background);
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -123,10 +146,13 @@ hr{
 .hero .presentation{
   flex:35%;
   font-size: 2rem;
-  margin-left: 1rem;
+  padding-top: 7rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
   font-weight: bolder;
   justify-content: center;
-  align-items: center;
+  align-items:flex-end;
+  color: var(--font-color);
 }
 
 .hero .presentation img{
@@ -139,28 +165,38 @@ hr{
 
 .projets{
   display: flex;
-  flex:30%;
+  flex:28%;
   color: var(--orange-background);
   font-style:italic;
   margin: 2rem;
   text-align: center;
+  align-items: center;
   justify-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.projets .fleche{
+  gap: 20px;
+  font-size: larger;
+  margin-bottom: 8rem;
 }
 
 .projets .projets-images img {
-  width: 100%;
-  height: auto;
+  width:400px;
+  height: fit-content;
+  padding: 5px;
   border: 5px solid var(--white-background);
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projets-images {
-  display: flex;
+  flex: 33.33%;
   margin-left: 1rem;
   margin-right: 1rem;
   align-items: center;
@@ -238,7 +274,8 @@ hr{
 .footer-basic {
   background-color:var(--white-background);
   color:var(--font-color);
-  padding: 1rem;
+  padding: 2rem;
+  margin:-3rem;
 }
 
 .footer-basic li {
